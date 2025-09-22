@@ -14,7 +14,7 @@ class AppDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           SizedBox(
-            height: 172, // DrawerHeader-ийн өндөр
+            height: 172,
             child: DrawerHeader(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
@@ -26,22 +26,11 @@ class AppDrawer extends StatelessWidget {
               margin: EdgeInsets.zero,
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center, // голлуулж байна
                 children: [
-                  Image.asset(
-                    'assets/endlesslogo.png',
-                    height: 60, // logo хэмжээ
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    "",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  Image.asset('assets/endlesslogo.png', height: 60),
+                  // Text-ийг авч хаясан
                 ],
               ),
             ),
